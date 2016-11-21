@@ -1,0 +1,22 @@
+<div class="login">
+    <form class="login-form">
+        <h1>Connexion</h1>
+        <label for="enrollId"> EnrollID : </label>
+        <input title="enrollId" type="text" class="txt-login" ng-model="deployObj.enrollId"><br>
+        <label for="enrollSecret"> EnrollSecret : </label>
+        <input title="enrollSecret" type="password" class="txt-login" ng-model="deployObj.enrollSecret"><br>
+        <input class="btn btn-primary btn-connect" type="submit" value="CONNECT" ng-click="deploy()">
+        <span class="error" ng-bind="error"></span>
+        <!--<label for="chaincodeUrl"> Chaincode Url : </label>
+        <input type="text" name="chaincodeUrl" ng-model="deployObj.chaincodeUrl">
+        <label for="deployFunctsion"> Function : </label>
+        <input type="text" name="deployFunction" ng-model="deployObj.function"><br>
+        <label> Args : </label>
+        Arg 1 : <input type="text" ng-model="deployObj.args[0]">
+        Value 1 : <input type="text" ng-model="deployObj.args[1]"><br>
+        Arg 2 : <input type="text" ng-model="deployObj.args[2]">
+        Value 2 : <input type="text" ng-model="deployObj.args[3]">
+        <input type="submit" value="Deploy" ng-click="deploy()">
+        <h2 ng-bind="result"></h2>-->
+    </form>
+</div>

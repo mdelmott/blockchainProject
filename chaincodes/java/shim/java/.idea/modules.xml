@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1582938615/Example.iml" filepath="$PROJECT_DIR$/.idea/modules/-1582938615/Example.iml" group="examples/chaincode/java/Example" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1582938615/Example_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1582938615/Example_main.iml" group="examples/chaincode/java/Example" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1582938615/Example_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1582938615/Example_test.iml" group="examples/chaincode/java/Example" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-452609745/LinkExample.iml" filepath="$PROJECT_DIR$/.idea/modules/-452609745/LinkExample.iml" group="examples/chaincode/java/LinkExample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-452609745/LinkExample_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-452609745/LinkExample_main.iml" group="examples/chaincode/java/LinkExample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-452609745/LinkExample_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-452609745/LinkExample_test.iml" group="examples/chaincode/java/LinkExample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2082531473/MapExample.iml" filepath="$PROJECT_DIR$/.idea/modules/-2082531473/MapExample.iml" group="examples/chaincode/java/MapExample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2082531473/MapExample_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-2082531473/MapExample_main.iml" group="examples/chaincode/java/MapExample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2082531473/MapExample_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-2082531473/MapExample_test.iml" group="examples/chaincode/java/MapExample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1971267538/RangeExample.iml" filepath="$PROJECT_DIR$/.idea/modules/-1971267538/RangeExample.iml" group="examples/chaincode/java/RangeExample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1971267538/RangeExample_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1971267538/RangeExample_main.iml" group="examples/chaincode/java/RangeExample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1971267538/RangeExample_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1971267538/RangeExample_test.iml" group="examples/chaincode/java/RangeExample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1337795395/SimpleSample.iml" filepath="$PROJECT_DIR$/.idea/modules/-1337795395/SimpleSample.iml" group="examples/chaincode/java/SimpleSample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1337795395/SimpleSample_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1337795395/SimpleSample_main.iml" group="examples/chaincode/java/SimpleSample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1337795395/SimpleSample_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1337795395/SimpleSample_test.iml" group="examples/chaincode/java/SimpleSample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/197722237/TableExample.iml" filepath="$PROJECT_DIR$/.idea/modules/197722237/TableExample.iml" group="examples/chaincode/java/TableExample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1060965838/chaincode-java.iml" filepath="$PROJECT_DIR$/.idea/modules/1060965838/chaincode-java.iml" group="examples/chaincode/java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/79519706/core.iml" filepath="$PROJECT_DIR$/.idea/modules/79519706/core.iml" group="core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-844769223/core-chaincode.iml" filepath="$PROJECT_DIR$/.idea/modules/-844769223/core-chaincode.iml" group="core/chaincode" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/879965956/examples.iml" filepath="$PROJECT_DIR$/.idea/modules/879965956/examples.iml" group="examples" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/515916515/examples-chaincode.iml" filepath="$PROJECT_DIR$/.idea/modules/515916515/examples-chaincode.iml" group="examples/chaincode" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/802494708/fabric.iml" filepath="$PROJECT_DIR$/.idea/modules/802494708/fabric.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-330199473/shim.iml" filepath="$PROJECT_DIR$/.idea/modules/-330199473/shim.iml" group="core/chaincode/shim" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shim-java.iml" filepath="$PROJECT_DIR$/.idea/modules/shim-java.iml" group="core/chaincode/shim/java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shim-java_main.iml" filepath="$PROJECT_DIR$/.idea/modules/shim-java_main.iml" group="core/chaincode/shim/java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shim-java_test.iml" filepath="$PROJECT_DIR$/.idea/modules/shim-java_test.iml" group="core/chaincode/shim/java" />
+    </modules>
+  </component>
+</project>

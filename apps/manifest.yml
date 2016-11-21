@@ -1,0 +1,13 @@
+---
+applications:
+- name: blockchainClient
+  memory: 256M
+  instances: 1
+  path: .
+  command: gulp deploy
+- name: blockchainServer
+  memory: 256M
+  instances: 1
+  path: .
+  command: gulp serve
+
