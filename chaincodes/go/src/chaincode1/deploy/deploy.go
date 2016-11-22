@@ -59,5 +59,5 @@ func (d *Deploy) createTable(stub *shim.ChaincodeStub) error {
 
 
 func main() {
-	new(Deploy)
+	//new(Deploy)
 }
