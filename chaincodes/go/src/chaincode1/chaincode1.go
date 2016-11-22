@@ -23,14 +23,13 @@ package chaincode1
 //hard-coding.
 
 import (
-	"./deploy"
-
 	"encoding/json"
 	"errors"
 	"fmt"
 	"strconv"
 
 	"github.com/hyperledger/fabric/core/chaincode/shim"
+	"chaincode1/deploy"
 )
 
 // SimpleChaincode example simple Chaincode implementation

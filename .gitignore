@@ -11,8 +11,10 @@ apps/server/util/util-sdk.js
 apps/server/0.secure.blockchain.ibm.com.cert
 apps/server/us.blockchain.ibm.com.cert
 chaincodes/.idea/
-chaincodes/ChaincodeExample/.idea/
-chaincodes/ChaincodeExample/target/
-chaincodes/shim/java/.idea/
-chaincodes/shim/java/build/
+chaincodes/go/pkg/
+chaincodes/go/src/github.com/
+chaincodes/java/ChaincodeExample/.idea/
+chaincodes/java/ChaincodeExample/target/
+chaincodes/java/shim/java/.idea/
+chaincodes/java/shim/java/build/
 
