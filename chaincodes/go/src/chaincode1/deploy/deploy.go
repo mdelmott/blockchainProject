@@ -59,5 +59,4 @@ func (d *Deploy) createTable(stub shim.ChaincodeStubInterface) error {
 
 
 func main() {
-	new(Deploy)
 }
