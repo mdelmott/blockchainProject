@@ -38,7 +38,7 @@ type SimpleChaincode struct {
 }
 
 func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
-	deploy := chaincode1.Deploy{}
+	deploy := new(chaincode1.Deploy)
 	return deploy.Init(stub, args)
 }
 
