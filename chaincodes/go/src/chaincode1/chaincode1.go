@@ -91,7 +91,7 @@ func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface, function stri
 	var invokeElement = chaincode1.InvokeElement{}
 
 	switch fct {
-	case "add" : return invokeElement.add(stub, args)
+	case "add" : return invokeElement.Add(stub, args)
 	case "delete" : return t.delete(stub, args)
 	case "transaction" : return t.transaction(stub, args)
 	case "fusion" : return t.fusion(stub, args)

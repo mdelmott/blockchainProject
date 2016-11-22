@@ -11,7 +11,7 @@ import (
 type InvokeElement struct {
 }
 
-func (ie *InvokeElement) add(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
+func (ie *InvokeElement) Add(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 	var A string    // Entities
 	var Aval int // Asset holdings
 	var err error
