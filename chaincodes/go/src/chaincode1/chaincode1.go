@@ -38,8 +38,11 @@ type SimpleChaincode struct {
 }
 
 func (t *SimpleChaincode) Init(stub *shim.ChaincodeStub, function string, args []string) ([]byte, error) {
+	//deploy := chaincode1.Deploy{}
+	//return deploy.Init(stub, args)
 	deploy := chaincode1.Deploy{}
-	return deploy.Init(stub, args)
+	fmt.Println(deploy)
+	return nil, nil
 }
 
 /*func (t *SimpleChaincode) createTable(stub *shim.ChaincodeStub) error {
