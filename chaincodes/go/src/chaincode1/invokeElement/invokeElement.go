@@ -10,7 +10,7 @@ import (
 type InvokeElement struct {
 }
 
-func (ie *InvokeElement) add(stub *shim.ChaincodeStub, args []string) ([]byte, error) {
+func (ie *InvokeElement) add(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 	return nil, nil
 }
 

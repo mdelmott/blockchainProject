@@ -37,13 +37,13 @@ import (
 type SimpleChaincode struct {
 }
 
-func (t *SimpleChaincode) Init(stub *shim.ChaincodeStub, function string, args []string) ([]byte, error) {
+func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
 	deploy := chaincode1.Deploy{}
 	return deploy.Init(stub, args)
 }
 
 // Transaction makes payment of X units from A to B
-func (t *SimpleChaincode) Invoke(stub *shim.ChaincodeStub, function string, args []string) ([]byte, error) {
+func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
 
 	function = args[0]
 
@@ -57,7 +57,7 @@ func (t *SimpleChaincode) Invoke(stub *shim.ChaincodeStub, function string, args
 	}
 }
 
-func (t *SimpleChaincode) insertTable(stub *shim.ChaincodeStub, args []string) ([]byte, error) {
+func (t *SimpleChaincode) insertTable(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 
 	var attr1, attr2, attr3, attr4 string
 
@@ -88,7 +88,7 @@ func (t *SimpleChaincode) insertTable(stub *shim.ChaincodeStub, args []string) (
 	return nil, nil
 }
 
-func (t *SimpleChaincode) add(stub *shim.ChaincodeStub, args []string) ([]byte, error){
+func (t *SimpleChaincode) add(stub shim.ChaincodeStubInterface, args []string) ([]byte, error){
 	var A string    // Entities
 	var Aval int // Asset holdings
 	var err error
@@ -106,7 +106,7 @@ func (t *SimpleChaincode) add(stub *shim.ChaincodeStub, args []string) ([]byte, 
 	return nil, nil
 }
 
-func (t *SimpleChaincode) transaction(stub *shim.ChaincodeStub, args []string) ([]byte, error){
+func (t *SimpleChaincode) transaction(stub shim.ChaincodeStubInterface, args []string) ([]byte, error){
 
 	var A, B string    // Entities
 	var Aval, Bval int // Asset holdings
@@ -163,7 +163,7 @@ func (t *SimpleChaincode) transaction(stub *shim.ChaincodeStub, args []string) (
 	return nil, nil
 }
 
-func (t *SimpleChaincode) fusion(stub *shim.ChaincodeStub, args []string) ([]byte, error) {
+func (t *SimpleChaincode) fusion(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 	var A, B string
 	var Aval, Bval int
 
@@ -206,7 +206,7 @@ func (t *SimpleChaincode) fusion(stub *shim.ChaincodeStub, args []string) ([]byt
 
 
 // Deletes an entity from state
-func (t *SimpleChaincode) delete(stub *shim.ChaincodeStub, args []string) ([]byte, error) {
+func (t *SimpleChaincode) delete(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 	if len(args) != 2 {
 		return nil, errors.New("Incorrect number of arguments. Expecting 2")
 	}
@@ -223,7 +223,7 @@ func (t *SimpleChaincode) delete(stub *shim.ChaincodeStub, args []string) ([]byt
 }
 
 // Query callback representing the query of a chaincode
-func (t *SimpleChaincode) Query(stub *shim.ChaincodeStub, function string, args []string) ([]byte, error) {
+func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
 
 	function = args[0];
 
@@ -235,7 +235,7 @@ func (t *SimpleChaincode) Query(stub *shim.ChaincodeStub, function string, args 
 
 }
 
-func (t *SimpleChaincode) queryElement(stub *shim.ChaincodeStub, args []string) ([]byte, error) {
+func (t *SimpleChaincode) queryElement(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 	var A string // Entities
 	var err error
 
@@ -258,7 +258,7 @@ func (t *SimpleChaincode) queryElement(stub *shim.ChaincodeStub, args []string) 
 	return Avalbytes, nil
 }
 
-func (t *SimpleChaincode) queryTable(stub *shim.ChaincodeStub, args []string) ([]byte, error) {
+func (t *SimpleChaincode) queryTable(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 
 	var columns []shim.Column
 

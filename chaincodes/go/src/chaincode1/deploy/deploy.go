@@ -10,7 +10,7 @@ import (
 type Deploy struct {
 }
 
-func (d *Deploy) Init(stub *shim.ChaincodeStub, args []string) ([]byte, error) {
+func (d *Deploy) Init(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 	var A string    // Entities
 	var Aval int // Asset holdings
 	var err error
@@ -40,7 +40,7 @@ func (d *Deploy) Init(stub *shim.ChaincodeStub, args []string) ([]byte, error) {
 	return nil, nil
 }
 
-func (d *Deploy) createTable(stub *shim.ChaincodeStub) error {
+func (d *Deploy) createTable(stub shim.ChaincodeStubInterface) error {
 	var columnDefsTable []*shim.ColumnDefinition
 	columnOneTableDef := shim.ColumnDefinition{Name: "colOne",
 		Type: shim.ColumnDefinition_STRING, Key: true}
