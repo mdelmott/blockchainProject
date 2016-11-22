@@ -29,7 +29,7 @@ import (
 	"strconv"
 
 	"github.com/hyperledger/fabric/core/chaincode/shim"
-	"github.com/mdelmott/blockchainProject/chaincodes/go/src/chaincode1/deploy"
+	//"github.com/mdelmott/blockchainProject/chaincodes/go/src/chaincode1/deploy"
 	//"github.com/mdelmott/blockchainProject/chaincodes/go/src/chaincode1/invokeElement"
 )
 
@@ -40,8 +40,8 @@ type SimpleChaincode struct {
 func (t *SimpleChaincode) Init(stub *shim.ChaincodeStub, function string, args []string) ([]byte, error) {
 	//deploy := chaincode1.Deploy{}
 	//return deploy.Init(stub, args)
-	deploy := chaincode1.Deploy{}
-	fmt.Println(deploy)
+	//deploy := chaincode1.Deploy{}
+	//fmt.Println(deploy)
 	return nil, nil
 }
 
