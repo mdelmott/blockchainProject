@@ -39,7 +39,8 @@ type SimpleChaincode struct {
 
 func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
 	deploy := new(chaincode1.Deploy)
-	return deploy.Init(stub, args)
+	res, err := deploy.init(stub, args)
+	return res, err
 }
 
 // Transaction makes payment of X units from A to B
