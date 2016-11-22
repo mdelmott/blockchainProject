@@ -88,7 +88,7 @@ func (t *SimpleChaincode) createTable(stub shim.ChaincodeStubInterface) error {
 func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
 
 	var fct = args[0]
-	var invokeElement = new(chaincode1.InvokeElement)
+	var invokeElement = chaincode1.InvokeElement{}
 
 	switch fct {
 	case "add" : return invokeElement.add(stub, args)
