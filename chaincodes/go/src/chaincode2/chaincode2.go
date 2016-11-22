@@ -32,6 +32,7 @@ import (
 
 // SimpleChaincode example simple Chaincode implementation
 type SimpleChaincode struct {
+	shim.Chaincode
 }
 
 /*func (t *SimpleChaincode) Init(stub *shim.ChaincodeStub, function string, args []string) ([]byte, error) {
@@ -236,7 +237,7 @@ func (t *SimpleChaincode) Query(stub *shim.ChaincodeStub, function string, args 
 
 
 func main() {
-	err := shim.Start(new(*SimpleChaincode))
+	err := shim.Start(new(SimpleChaincode))
 	if err != nil {
 		fmt.Printf("Error starting Simple chaincode: %s", err)
 	}
