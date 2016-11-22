@@ -30,7 +30,7 @@ import (
 
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 	"github.com/mdelmott/blockchainProject/chaincodes/go/src/chaincode1/deploy"
-	"github.com/mdelmott/blockchainProject/chaincodes/go/src/chaincode1/invokeElement"
+	//"github.com/mdelmott/blockchainProject/chaincodes/go/src/chaincode1/invokeElement"
 )
 
 // SimpleChaincode example simple Chaincode implementation

@@ -1,9 +1,9 @@
 package chaincode1
 
 import (
-	"errors"
-	"strconv"
-	"fmt"
+	//"errors"
+	//"strconv"
+	//"fmt"
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 )
 
