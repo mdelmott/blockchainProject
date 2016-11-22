@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: example.DeployTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.885 sec - in example.DeployTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.383 sec

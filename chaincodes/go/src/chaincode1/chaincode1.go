@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package main
+package chaincode1
 
 //WARNING - this chaincode's ID is hard-coded in chaincode_example04 to illustrate one way of
 //calling chaincode from a chaincode. If this example is modified, chaincode_example04.go has
@@ -23,6 +23,8 @@ package main
 //hard-coding.
 
 import (
+	"./deploy"
+
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -36,36 +38,11 @@ type SimpleChaincode struct {
 }
 
 func (t *SimpleChaincode) Init(stub *shim.ChaincodeStub, function string, args []string) ([]byte, error) {
-	var A string    // Entities
-	var Aval int // Asset holdings
-	var err error
-
-	if len(args)%2 != 0 {
-		return nil, errors.New("Incorrect number of arguments")
-	}
-
-	for i := 0; i<len(args); i= i+2 {
-		A = args[i];
-		Aval,err = strconv.Atoi(args[i+1]);
-		if err != nil {
-			return nil, errors.New("Expecting integer value for asset holding")
-		}
-		err = stub.PutState(A, []byte(strconv.Itoa(Aval)))
-		if err != nil {
-			return nil, err
-		}
-
-	}
-
-	err = t.createTable(stub)
-	if err != nil {
-		return nil, fmt.Errorf("Error creating table one during init. %s", err)
-	}
-
-	return nil, nil
+	deploy := chaincode1.Deploy{}
+	return deploy.Init(stub, args)
 }
 
-func (t *SimpleChaincode) createTable(stub *shim.ChaincodeStub) error {
+/*func (t *SimpleChaincode) createTable(stub *shim.ChaincodeStub) error {
 	var columnDefsTable []*shim.ColumnDefinition
 	columnOneTableDef := shim.ColumnDefinition{Name: "colOne",
 		Type: shim.ColumnDefinition_STRING, Key: true}
@@ -80,7 +57,7 @@ func (t *SimpleChaincode) createTable(stub *shim.ChaincodeStub) error {
 	columnDefsTable = append(columnDefsTable, &columnThreeTableDef)
 	columnDefsTable = append(columnDefsTable, &columnFourTableDef)
 	return stub.CreateTable("table", columnDefsTable)
-}
+}*/
 
 // Transaction makes payment of X units from A to B
 func (t *SimpleChaincode) Invoke(stub *shim.ChaincodeStub, function string, args []string) ([]byte, error) {

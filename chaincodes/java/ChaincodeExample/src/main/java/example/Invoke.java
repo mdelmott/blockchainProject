@@ -19,7 +19,7 @@ public class Invoke {
         String toAm=stub.getState(toName);
         String am =args[2];
         int valFrom=0;
-        if (fromAm!=null&&!fromAm.isEmpty()){
+        if (fromAm!=null && !fromAm.isEmpty()){
             try{
                 valFrom = Integer.parseInt(fromAm);
             }catch(NumberFormatException e ){
