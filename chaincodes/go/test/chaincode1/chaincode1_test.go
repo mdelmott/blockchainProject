@@ -17,20 +17,19 @@ limitations under the License.
 package chaincode1_test
 
 import (
-	"../../src/chaincode1"
-	"testing"
+	//"testing"
 	//"github.com/hyperledger/fabric/core/chaincode/shim"
 	//"github.com/stretchr/testify/mock"
 	//"github.com/stretchr/testify/assert"
-	"github.com/hyperledger/fabric/core/chaincode/shim"
+	//"github.com/hyperledger/fabric/core/chaincode/shim"
 )
 
 
-func TestInit(t *testing.T) {
+/*func TestInit(t *testing.T) {
 	sc := shim.Start(new(chaincode1.SimpleChaincode))
 	t.Log(sc)
 
-}
+}*/
 
 /*func testCreateTable(t *testing.T) {
 
