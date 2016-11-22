@@ -40,22 +40,7 @@ func (d *Deploy) init(stub shim.ChaincodeStubInterface, args []string) ([]byte, 
 	return nil, nil
 }
 
-func (d *Deploy) createTable(stub shim.ChaincodeStubInterface) error {
-	var columnDefsTable []*shim.ColumnDefinition
-	columnOneTableDef := shim.ColumnDefinition{Name: "colOne",
-		Type: shim.ColumnDefinition_STRING, Key: true}
-	columnTwoTableDef := shim.ColumnDefinition{Name: "colTwo",
-		Type: shim.ColumnDefinition_STRING, Key: false}
-	columnThreeTableDef := shim.ColumnDefinition{Name: "colThree",
-		Type: shim.ColumnDefinition_STRING, Key: false}
-	columnFourTableDef := shim.ColumnDefinition{Name: "colFour",
-		Type: shim.ColumnDefinition_STRING, Key: false}
-	columnDefsTable = append(columnDefsTable, &columnOneTableDef)
-	columnDefsTable = append(columnDefsTable, &columnTwoTableDef)
-	columnDefsTable = append(columnDefsTable, &columnThreeTableDef)
-	columnDefsTable = append(columnDefsTable, &columnFourTableDef)
-	return stub.CreateTable("table", columnDefsTable)
-}
+
 
 
 func main() {
