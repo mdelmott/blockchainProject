@@ -252,9 +252,9 @@ func (t *SimpleChaincode) delete(stub shim.ChaincodeStubInterface, args []string
 // Query callback representing the query of a chaincode
 func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
 
-	function = args[0];
+	fct := args[0];
 
-	switch function {
+	switch fct {
 	case "queryElement" : return t.queryElement(stub, args)
 	case "queryTable" : return t.queryTable(stub, args)
 	default: return nil, fmt.Errorf("Incorrect name of function, function received : %s", function)

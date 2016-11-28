@@ -33,6 +33,7 @@ router.use('/deploy', function(req, res){
 });
 
 router.use('/query', function (req, res) {
+    console.log(chaincode);
     chaincode.query.read(req.body.args, function(err, chaincode_query){
        if(err != null){
            res.status(500).send(err);

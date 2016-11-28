@@ -6,7 +6,7 @@ module.exports = function ($scope,
     $scope.deployObj = {
         enrollId: "",
         enrollSecret: "",
-        chaincodeUrl: "https://github.com/mdelmott/blockchainProject/chaincodes/go/src/chaincode1",
+        chaincodeUrl: "https://github.com/mdelmott/blockchainProject/chaincodes/go/src/chaincode1/chaincode",
         function: "init",
         args: ["a", "100", "b", "200"]
     };
